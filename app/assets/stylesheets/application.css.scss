@@ -18,10 +18,12 @@
 
 @import 'bootstrap';
  
+//Typography Styles
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+//Background Gradient
 .navbar, .home-callout {
     //Gradient provided by  @_ighosh at uigradients.com
     background: #3D7EAA; /* fallback for old browsers */
@@ -29,28 +31,21 @@ h1, h2, h3 {
     background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Nav Styles
 .navbar{
     border: none;
 }
 
-.navbar-default .navbar-brand{
-    color: black;
-}
-
-.navbar-default .navbar-brand:hover{
-    color: black;
-    opacity: 0.45;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a{
     color: black;
+    &:hover{
+        color: black;
+        opacity: 0.45;
+    }
 }
 
-.navbar-default .navbar-nav >li > a:hover{
-    color:black;
-    opacity: 0.45;
-}
-
+// Home Page Styles
 .home-callout{
     color: black;
     margin-top: -20px;
